@@ -1,0 +1,21 @@
+{
+  "name": "cors-test",
+  "version": "0.0.1",
+  "private": true,
+  "description": "CORS header tester — Cloudflare Worker",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+    "test": "tsc --noEmit",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.66.0"
+  },
+  "pnpm": {
+    "neverBuiltDependencies": []
+  }
+}
